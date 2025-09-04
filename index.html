@@ -16,7 +16,7 @@
     payBtn.addEventListener("click", async () => {
       message.textContent = "Traitement...";
       try {
-        const res = await fetch("https://mon-backend.onrender.com/checkout", {
+        const res = await fetch("https://dsers.onrender.com", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ items: [{ productId: 1, quantity: 1 }] })
